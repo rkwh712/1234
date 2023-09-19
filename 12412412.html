@@ -3,65 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문서구조화 연습 - 시맨틱태그</title>
-    <style>
-        *{margin: 0; padding: 0;} /*모든태그의 여백 0*/
-        html,body{
-            height: 100%;
-        }
-        header{
-            width: 100%; height: 100px; background-color: yellow;
-        }
-        nav{
-            width: 15%; height: 70%; float: left; background-color: lightblue;
-        }
-        section{
-            width: 65%; height: 70%; float: left; background-color: red;
-        }
-        article{
-            height: 30%; background-color: aqua;
-        }
-        aside{
-            width: 20%; height: 70%; float: left; background-color: orange;
-        }
-        footer{
-            width: 100%; height: 100px; clear: left; background-color: gray;
-        }
-    </style>
+    <title>회원 가입 화면</title>
 </head>
 <body>
-    <header>
-        <h1>볼프강 아마데우스 모차르트</h1>
-        <p>1756년 1월 27일 잘츠부르크에서 태어난 천재적인 오스트리아의 작곡가 ...</p>
-    </header>
-    <nav>
-        <h2>목차</h2>
-        <ul>
-        <li><a href="#life">생애</a></li>
-        <li><a href="#death">죽음</a></li>
-        <li><a href="#music">음악</a></li>
-        </ul>
-    </nav>
-    <section>
-        <article id="life">
-            <h2>생애</h2>
-            <p>모차르트는 1756년 1월 27일 잘츠부르크에서 태어나서, … </p>
-        </article>
-        <article id="death">
-            <h2>죽음</h2>
-            <p>모차르트는 1791년 12월 5일 오전 0시 55분경에 갑자기 병으로 죽었으며 …</p>
-        </article>
-        <article id="music">
-            <h2>음악</h2>
-            <p>오페라, 교향곡, 행진곡, 관현악용 무곡, 피아노 협주곡, 바이올린 협주곡, …</p>
-        </article>
-    </section>
-    <aside id="legend">
-        <h3>모차르트의 죽음에 얽힌 전설</h3>
-        <p>모차르트의 장례식 날 비가 오고 천둥이 쳤다고 하나 ...</p>
-        </aside>
-        <footer>
-        <p>2017년 10월 7일 작성, 위키피디어 참고</p>
-    </footer>
+    <h3>회원 가입 화면</h3>
+    <hr>
+    <form action="">
+        이름 : <input type="text" size="20"><br>
+        나이 : <input type="text" size="20"><br>
+        직업 : <input type="text" list="ctr" placeholder="선택하세요" ><br>
+        <datalist id= "ctr">
+            <option value="교사"></option>
+            <option value="공무원"></option>
+            <option value="학생"></option>
+        </datalist>
+        자기소개: <br>
+        <textarea cols="30" rows="10" placeholder="자기소개를 작성하세요."></textarea><br>
+
+        <input type="submit" value="Send">
+        <input type="reset"value="초기화">
+    </form>
 </body>
 </html>
